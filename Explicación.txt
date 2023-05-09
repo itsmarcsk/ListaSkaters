@@ -1,0 +1,1 @@
+Es un proyecto del grado superior de desarrollo de aplicaciones multiplataforma de casi terminando terminando el primer curso, se trata de un proyecto java hecho con la librería de interfacz gráfica java.swing, no contiene base de datos por lo que se borrarán las acciones hechas al cerrar el programa 
