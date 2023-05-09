@@ -15,7 +15,8 @@ import view.VConsultarLista;
 import view.VInicio;
 
 public class InicioListener implements ActionListener {
-
+	//este es el controlador, en el que se controlará las acciones que se hacen en las ventanas y también usado de unión entre la ventana y las clases del paquete model
+	
 	private VInicio inicio;
 	private VAnadirSkater anadir;
 	private VConsultarLista consultaLista;
