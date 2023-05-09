@@ -3,7 +3,7 @@ package model;
 import java.util.ArrayList;
 
 public class ListaSkaters {
-
+	//lista de objetos, en este caso, el objeto es Skater
 	private ArrayList<Skater> listaSkaters;
 
 	public ListaSkaters() {
@@ -11,7 +11,7 @@ public class ListaSkaters {
 		listaSkaters = new ArrayList<>();
 		cargarDatos();
 	}
-
+	//primera carga de datos para que el JTable tenga algun dato desde el principio
 	private void cargarDatos() {
 		listaSkaters.add(new Skater("Marc", "Giménez Díaz", 19, "España", "Hombre"));
 		listaSkaters.add(new Skater("Nyjah", "Imani Huston", 28,"Suecia","Hombre"));
@@ -21,6 +21,7 @@ public class ListaSkaters {
 		listaSkaters.add(new Skater("Luan", "Oliveira", 31, "Brasil", "Hombre"));
 		
 	}
+	//sirve para añadir objetos(skaters) a la lista
 	public void addSkater(Skater s) {
 
 		listaSkaters.add(s);
