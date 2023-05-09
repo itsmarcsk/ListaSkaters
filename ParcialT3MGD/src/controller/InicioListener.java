@@ -44,7 +44,7 @@ public class InicioListener implements ActionListener {
 			}		
 		}else if (e.getSource() instanceof JButton) {
 			if(e.getActionCommand().equals(VAnadirSkater.ANADIR)) {
-				
+				//se controla que los datos del objeto estén rellenados
 				Skater skater = anadir.getDatos();
 				if(skater.getNombre().equals("") || skater.getApellidos().equals("") || skater.getPais().equals("")) {
 					consultaLista.mostrarError("Todos los campos son obligatorios");
@@ -57,6 +57,7 @@ public class InicioListener implements ActionListener {
 				}
 				
 			}else if(e.getActionCommand().equals(VConsultarLista.ELIMINAR)) {
+				//antes de eliminar, se asegura haber escogido alguna fila
 				int pos = consultaLista.obtenerElemSel();
 				if (pos == -1) {
 					consultaLista.mostrarError("Debe seleccionar un registro en la tabla");
@@ -78,6 +79,7 @@ public class InicioListener implements ActionListener {
 					}
 				}
 			}else if(e.getActionCommand().equals(VAnadirSkater.REINICIAR)) {
+				//se asegura que tengan algo los campos y en caso de la edad y del género, se asegura que sea 12 debido a que está marcado como mínimo y la del género está indicado para que al reiniciar, esté en hombre
 				Skater skater = anadir.getDatos();
 				if(skater.getNombre().equals("") || skater.getApellidos().equals("") || skater.getPais().equals("") || skater.getEdad()==12 || skater.getGenero().equals("Hombre")) {
 					anadir.mostrarError("No hay datos que modificar");
