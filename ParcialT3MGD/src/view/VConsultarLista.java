@@ -20,7 +20,7 @@ import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
 public class VConsultarLista extends JPanel {
-
+	//listado en una tabla, si se pulsa en alguna fila y se pulsa en el btnEliminar, se eliminará
 	private JScrollPane scrpTabla;
 	private DefaultTableModel model = new DefaultTableModel();
 	public ArrayList<Skater> listaS = new ArrayList<>();
