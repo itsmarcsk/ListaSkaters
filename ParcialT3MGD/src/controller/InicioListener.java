@@ -48,6 +48,7 @@ public class InicioListener implements ActionListener {
 				Skater skater = anadir.getDatos();
 				if(skater.getNombre().equals("") || skater.getApellidos().equals("") || skater.getPais().equals("")) {
 					consultaLista.mostrarError("Todos los campos son obligatorios");
+				//en caso de la edad, se comprueba que la edad no sea menor a 12  y que no sea mayor a 70
 				}else if(skater.getEdad()<12 || skater.getEdad()> 70) {
 					consultaLista.mostrarError("La edad tiene que ser un número que se encuentre entre 12 y 70");
 				}else {
