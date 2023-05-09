@@ -8,7 +8,7 @@ import view.VConsultarLista;
 import view.VInicio;
 
 public class Main {
-
+	//ejecuta el programa
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
