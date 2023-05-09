@@ -19,7 +19,7 @@ import javax.swing.JSeparator;
 import javax.swing.JLabel;
 
 public class VInicio extends JFrame {
-
+	//Esta es la ventana inicial y es la única que extiende de JFrame y las demás de JPanel para que, así se cambie únicamente el JPanel y pueda permanecer siempre el menú en la ventana
 	public static final int ANCHO = 700;
 	public static final int ALTO = 500;
 	public static final String CONSULTAR_LISTA = "Consultar skaters";
