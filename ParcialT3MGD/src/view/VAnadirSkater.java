@@ -20,7 +20,7 @@ import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 
 public class VAnadirSkater extends JPanel {
-
+	//ventana para añadir skaters
 	public ListaSkaters lS;
 	private JLabel lblNombre;
 	private JLabel lblApellidos;
